@@ -12,6 +12,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("app_launch.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 357.27, 774.54);
+        scene.getStylesheets().add(App.class.getResource("/styles.css").toExternalForm());
         stage.setTitle("Feastify App");
         stage.setScene(scene);
         stage.show();
